@@ -140,6 +140,14 @@ Fortify::confirmPasswordView(function () {
 });
 ```
 
+#### Update AppLayout
+
+The `$page.currentRouteName` has been removed. Replace all usage with the ziggy current method
+
+```
+<jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
+```
+
 #### Remove [laravel-jetstream](https://www.npmjs.com/package/laravel-jetstream) NPM Package
 
 As of the Jetstream 2.0 release, this library is no longer necessary as all of its features have been incorporated into Inertia itself. You should remove the following from your `resources/js/app.js` file:
