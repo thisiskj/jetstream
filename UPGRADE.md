@@ -142,7 +142,7 @@ Fortify::confirmPasswordView(function () {
 
 #### Update AppLayout
 
-The `$page.currentRouteName` has been removed. Replace all usage with the ziggy current method
+The `$page.currentRouteName` property has been removed in Jetstream 2.0. Replace all usages with the ziggy current method
 
 ```
 <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
